@@ -1,0 +1,68 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CorrelationAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     Blackwell_Historical_Sales_Data-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues
+Instances:    157818
+Attributes:   27
+              Acer Aspire AS5750Z-4835
+              ASUS Zenbook Prime UX31A-DB51
+              Sony VAIO T Series SVT13112FXS
+              Sony L Series VPCL232FX/B
+              Alienware AAR4-10000BK
+              HP LaserJet Pro CP1025nw Color Printer
+              Brother MFCJ6910DW Business Inkjet All-in-One Printer
+              Brother Printer MFC7360N
+              SquareTrade 3-Year Computer Accidental Protection Warranty
+              SquareTrade 2-Year Extended Warranty
+              VIVAMART � Premium Compatible High Yield Toner
+              Brother Printer LC79BK
+              Brother Printer LC793PKS 3 Pack
+              Microsoft Office Home & Student 2010
+              Logitech C260
+              SteelSeries Diablo III Mouse
+              SteelSeries QcK Diablo III Mouse Pad
+              Logitech Desktop MK120
+              Logitech S120 2.0
+              Belkin Y Audio Cable
+              Dell UltraSharp U2711 27-inch
+              Viewsonic VX2450WM-LED 24-Inch
+              LG EW224T 22-Inch
+              6ft DisplayPort Male to Mini DisplayPort Male 32AWG Cable
+              Case Logic MLA-116
+              Ibex 17 Inch Notebook Backpack
+              Number of products purchased
+Evaluation mode:    10-fold cross-validation
+
+
+
+=== Attribute selection 10 fold cross-validation (stratified), seed: 1 ===
+
+average merit      average rank  attribute
+ 0.26  +- 0.001      1   +- 0       10 SquareTrade 2-Year Extended Warranty
+ 0.101 +- 0.001      2   +- 0       14 Microsoft Office Home & Student 2010
+ 0.072 +- 0.001      3   +- 0       18 Logitech Desktop MK120
+ 0.069 +- 0.001      4   +- 0       24 6ft DisplayPort Male to Mini DisplayPort Male 32AWG Cable
+ 0.055 +- 0.001      5   +- 0       13 Brother Printer LC793PKS 3 Pack
+ 0.051 +- 0.001      6   +- 0        6 HP LaserJet Pro CP1025nw Color Printer
+ 0.045 +- 0.001      8.2 +- 1.66     1 Acer Aspire AS5750Z-4835
+ 0.045 +- 0.001      8.4 +- 1.02    22 Viewsonic VX2450WM-LED 24-Inch
+ 0.045 +- 0.001      9   +- 1.41    21 Dell UltraSharp U2711 27-inch
+ 0.044 +- 0.001      9.7 +- 1.1      5 Alienware AAR4-10000BK
+ 0.044 +- 0.001      9.7 +- 1       19 Logitech S120 2.0
+ 0.041 +- 0.001     12   +- 0        8 Brother Printer MFC7360N
+ 0.04  +- 0         13.2 +- 0.4     15 Logitech C260
+ 0.039 +- 0.001     13.9 +- 0.54    27 Number of products purchased
+ 0.036 +- 0.001     15.3 +- 0.64     9 SquareTrade 3-Year Computer Accidental Protection Warranty
+ 0.036 +- 0.001     15.6 +- 0.49    20 Belkin Y Audio Cable
+ 0.032 +- 0.001     17.1 +- 0.3     25 Case Logic MLA-116
+ 0.03  +- 0.001     17.9 +- 0.3      3 Sony VAIO T Series SVT13112FXS
+ 0.027 +- 0.001     19.5 +- 0.5     16 SteelSeries Diablo III Mouse
+ 0.027 +- 0.001     19.5 +- 0.5     26 Ibex 17 Inch Notebook Backpack
+ 0.024 +- 0.001     21.4 +- 0.66    23 LG EW224T 22-Inch
+ 0.024 +- 0.001     21.8 +- 0.6      4 Sony L Series VPCL232FX/B
+ 0.022 +- 0.001     22.8 +- 0.4     11 VIVAMART � Premium Compatible High Yield Toner
+ 0.018 +- 0.001     24   +- 0       17 SteelSeries QcK Diablo III Mouse Pad
+ 0.009 +- 0.001     25   +- 0       12 Brother Printer LC79BK
+ 0     +- 0         26   +- 0        2 ASUS Zenbook Prime UX31A-DB51
+
