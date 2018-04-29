@@ -109,7 +109,7 @@
       <column caption='In-Store' datatype='integer' name='[in-store]' role='measure' type='quantitative' />
       <column caption='Items' datatype='integer' name='[items]' role='measure' type='quantitative' />
       <column caption='Region' datatype='integer' name='[region]' role='measure' type='quantitative' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.0474227' measure-ordering='alphabetic' measure-percentage='0.952577' show-aliased-fields='true' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.0494845' measure-ordering='alphabetic' measure-percentage='0.950515' show-aliased-fields='true' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -139,6 +139,13 @@
             <column-instance column='[region]' derivation='None' name='[none:region:qk]' pivot='key' type='quantitative' />
             <column caption='Region' datatype='integer' name='[region]' role='measure' type='quantitative' />
           </datasource-dependencies>
+          <filter class='quantitative' column='[federated.00yb3vo1f8n9uw18xhzgr1lpifps].[none:age:qk]' included-values='in-range-or-null'>
+            <min>18</min>
+            <max>85</max>
+          </filter>
+          <slices>
+            <column>[federated.00yb3vo1f8n9uw18xhzgr1lpifps].[none:age:qk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
@@ -155,7 +162,24 @@
             <encodings>
               <text column='[federated.00yb3vo1f8n9uw18xhzgr1lpifps].[none:in-store:qk]' />
               <color column='[federated.00yb3vo1f8n9uw18xhzgr1lpifps].[none:region:qk]' />
+              <lod column='[federated.00yb3vo1f8n9uw18xhzgr1lpifps].[none:region:qk]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Age:&#9;</run>
+                <run bold='true'>&lt;[federated.00yb3vo1f8n9uw18xhzgr1lpifps].[none:age:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>In-Store:&#9;</run>
+                <run bold='true'>&lt;[federated.00yb3vo1f8n9uw18xhzgr1lpifps].[none:in-store:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Region:&#9;</run>
+                <run bold='true'>&lt;[federated.00yb3vo1f8n9uw18xhzgr1lpifps].[none:region:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg. Amount:&#9;</run>
+                <run bold='true'>&lt;[federated.00yb3vo1f8n9uw18xhzgr1lpifps].[avg:amount:qk]&gt;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='mark'>
                 <format attr='mark-labels-cull' value='true' />
@@ -192,6 +216,7 @@
         </edge>
         <edge name='right'>
           <strip size='160'>
+            <card param='[federated.00yb3vo1f8n9uw18xhzgr1lpifps].[none:age:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
             <card pane-specification-id='1' param='[federated.00yb3vo1f8n9uw18xhzgr1lpifps].[none:region:qk]' type='color' />
             <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
           </strip>
@@ -206,6 +231,7 @@
         <highlight>
           <color-one-way>
             <field>[federated.00yb3vo1f8n9uw18xhzgr1lpifps].[none:in-store:qk]</field>
+            <field>[federated.00yb3vo1f8n9uw18xhzgr1lpifps].[none:items:ok]</field>
             <field>[federated.00yb3vo1f8n9uw18xhzgr1lpifps].[none:region:qk]</field>
           </color-one-way>
         </highlight>
