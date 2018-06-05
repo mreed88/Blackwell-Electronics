@@ -18,6 +18,7 @@ Blackwell's Chief Technology Officer Danielle Sherman, as a member of the Blackw
 •	Conducting feature selection to investigate the correlation between different features in a dataset
 •	Presenting data mining results to management
 
-•	Do customers in different regions spend more per transaction? Which regions spend the most/least?
-•	Are there differences in the age of customers between regions? If so, can we predict the age of a customer in a region based on other demographic data?
-•	Finally, we need to investigate Martin’s hypothesis: Is there any correlation between age of a customer and if the transaction was made online or in the store? Do any other factors predict if a customer will buy online or in our stores?
+Do customers in different regions spend more per transaction? Which regions spend the most/least?
+Are there differences in the age of customers between regions? If so, can we predict the age of a customer in a region based on other demographic data?
+Can we predict the amount a customer will spend per transaction based on other data we have collected about that customer?
+Finally, we need to investigate Martin’s hypothesis: Is there any correlation between age of a customer and if the transaction was made online or in the store? Do any other factors predict if a customer will buy online or in our stores?
