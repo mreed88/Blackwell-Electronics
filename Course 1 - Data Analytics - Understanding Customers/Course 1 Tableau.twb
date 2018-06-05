@@ -446,7 +446,7 @@
     </dashboard>
     <dashboard name='Amount images'>
       <style />
-      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <size sizing-mode='automatic' />
       <zones />
     </dashboard>
     <dashboard name='Region vs Amount' type='storyboard'>
@@ -520,10 +520,10 @@
       <size sizing-mode='automatic' />
       <zones>
         <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
-          <zone h='97288' id='1' param='vert' removable='false' type='layout-flow' w='98504' x='748' y='1356'>
-            <zone h='5593' id='3' type='title' w='98504' x='748' y='1356' />
-            <zone h='17119' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98504' x='748' y='6949' />
-            <zone h='74576' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98504' x='748' y='24068'>
+          <zone h='97306' id='1' param='vert' removable='false' type='layout-flow' w='98504' x='748' y='1347'>
+            <zone h='5556' id='3' type='title' w='98504' x='748' y='1347' />
+            <zone h='17003' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98504' x='748' y='6903' />
+            <zone h='74747' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98504' x='748' y='23906'>
               <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
                 <story-points>
                   <story-point captured-sheet='' id='1' />
