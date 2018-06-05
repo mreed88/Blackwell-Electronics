@@ -1,3 +1,2 @@
 # class
-Welcome to my classwork repository for the Rutgers Data Analytics/Big Data Bootcamp.
-http://rie.rutgers.edu/course/data-analyticsbig-data-bootcamp
+My job is to use data mining and machine-learning techniques to investigate the patterns in customer sales data and provide insight into customer buying trends and preferences. The inferences I draw from the patterns in the data will help the business make data-driven decisions about sales and marketing activities.
